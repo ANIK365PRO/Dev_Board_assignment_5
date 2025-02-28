@@ -13,17 +13,32 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
 
+  <!-- get font popins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    .poppins-font {
+      font-family: "Poppins", sans-serif;
+      font-weight: 100;
+      font-style: normal;
+    }
+  </style>
+
 
 </head>
 
-<body class="bg-[#F4F7FF] pt-6 pb-14">
+<body class="poppins-font bg-[#F4F7FF] pt-6 pb-14">
   <header class="container mx-auto">
     <nav class="mx-5 md:mx-12 mb-5">
 
       <div class="navbar rounded-xl bg-[#FFFFFF]">
         <div class="flex-1">
           <img class="w-7 h-7 mr-2" src="./assets/logo.png" alt="">
-          <h3 class="animate-bounce text-2xl">Dev<span class="font-bold">Board</span></h3>
+          <h3 class="animate-bounce text-2xl font-extralight">Dev<span class="font-bold">Board</span></h3>
         </div>
         <div class="flex-none">
           <div class="flex items-center justify-center space-x-6">
@@ -41,8 +56,10 @@
     </nav>
 
   </header>
+
+  <!-- main section -->
   <main class="container mx-auto">
-    <div class="flex mx-5 md:mx-12 space-x-3">
+    <div class="flex mx-5 md:mx-12 space-x-4">
 
       <!-- left section container  -->
       <section class="w-3/5 md:w-3/4 p-6 bg-[#FFFFFF]">
@@ -76,7 +93,7 @@
             </figcaption>
           </section>
         </div>
-        <div class="border-b border-dashed w-full"></div>
+        <div class="border-b border-dashed w-full border-[#00303C]"></div>
 
 
 
@@ -84,9 +101,10 @@
         <div class="card- pt-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
           <section class="card-1 bg-[#F4F7FF] p-5 rounded-xl">
             <div>
-              <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit">ShopEase</p>
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit font-normal">ShopEase</p>
               <h4 class="font-6 font-medium mt-6 mb-8 text-[#00303C]">Fix Mobile Button Issue</h4>
-              <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000]">Debug using Chrome DevTools, check for overlapping
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000] font-normal">Debug using Chrome DevTools, check for
+                overlapping
                 elements, and ensure
                 onClick works properly
                 and ensure onClick works properly</p>
@@ -94,7 +112,7 @@
             <p class="border border-dashed w-full my-3"></p>
             <ul class="flex justify-between items-center">
               <li>
-                <p class="text-[#00303C]">Deadline</p>
+                <p class="text-[#00303C] font-normal">Deadline</p>
                 <h4 class="font-medium text-base text-[#00303C]">21 March 2025</h4>
               </li>
               <button
@@ -103,15 +121,16 @@
           </section>
           <section class="card-2 bg-[#F4F7FF] p-5 rounded-xl">
             <div>
-              <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit">CloudSync</p>
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit font-normal">CloudSync</p>
               <h4 class="font-6 font-medium mt-6 mb-8 text-[#00303C]">Add Dark Mode</h4>
-              <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000]">Store the user's preference in localStorage, update CSS
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000] font-normal">Store the user's preference in localStorage,
+                update CSS
                 variables dynamically, and apply a smooth transition effect.</p>
             </div>
             <p class="border border-dashed w-full my-3"></p>
             <ul class="flex justify-between items-center">
               <li>
-                <p class="text-[#00303C]">Deadline</p>
+                <p class="text-[#00303C] font-normal">Deadline</p>
                 <h4 class="font-medium text-base text-[#00303C]">21 March 2025</h4>
               </li>
               <button
@@ -120,16 +139,17 @@
           </section>
           <section class="card-3 bg-[#F4F7FF] p-5 rounded-xl">
             <div>
-              <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit">SwiftPay</p>
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit font-normal">SwiftPay</p>
               <h4 class="font-6 font-medium mt-6 mb-8 text-[#00303C]">Optimize Home page </h4>
-              <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000]">Debug using Chrome DevTools, check for overlapping
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000] font-normal">Debug using Chrome DevTools, check for
+                overlapping
                 elements, and ensure onClick works properly
                 and ensure onClick works properly</p>
             </div>
             <p class="border border-dashed w-full my-3"></p>
             <ul class="flex justify-between items-center">
               <li>
-                <p class="text-[#00303C]">Deadline</p>
+                <p class="text-[#00303C font-normal">Deadline</p>
                 <h4 class="font-medium text-base text-[#00303C]">21 March 2025</h4>
               </li>
               <button
@@ -138,16 +158,17 @@
           </section>
           <section class="card-4 bg-[#F4F7FF] p-5 rounded-xl">
             <div>
-              <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit">Meta</p>
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit font-normal">Meta</p>
               <h4 class="font-6 font-medium mt-6 mb-8 text-[#00303C]">Add new emoji 🤲</h4>
-              <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000]">Debug using Chrome DevTools, check for overlapping
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000] font-normal">Debug using Chrome DevTools, check for
+                overlapping
                 elements, and ensure onClick works properly
                 and ensure onClick works properly</p>
             </div>
             <p class="border border-dashed w-full my-3"></p>
             <ul class="flex justify-between items-center">
               <li>
-                <p class="text-[#00303C]">Deadline</p>
+                <p class="text-[#00303C] font-normal">Deadline</p>
                 <h4 class="font-medium text-base text-[#00303C]">21 March 2025</h4>
               </li>
               <button
@@ -156,16 +177,17 @@
           </section>
           <section class="card-5 bg-[#F4F7FF] p-5 rounded-xl">
             <div>
-              <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit">Google LLC</p>
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit font-normal">Google LLC</p>
               <h4 class="font-6 font-medium mt-6 mb-8 text-[#00303C]">Integrate OpenAI API</h4>
-              <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000]">Debug using Chrome DevTools, check for overlapping
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000] font-normal">Debug using Chrome DevTools, check for
+                overlapping
                 elements, and ensure onClick works properly
                 and ensure onClick works properly</p>
             </div>
             <p class="border border-dashed w-full my-3"></p>
             <ul class="flex justify-between items-center">
               <li>
-                <p class="text-[#00303C]">Deadline</p>
+                <p class="text-[#00303C] font-normal">Deadline</p>
                 <h4 class="font-medium text-base text-[#00303C]">21 March 2025</h4>
               </li>
               <button
@@ -174,16 +196,17 @@
           </section>
           <section class="card-6 bg-[#F4F7FF] p-5 rounded-xl">
             <div>
-              <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit">Glassdoar</p>
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit font-normal">Glassdoar</p>
               <h4 class="font-6 font-medium mt-6 mb-8 text-[#00303C]">Improve Job searching</h4>
-              <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000]">Debug using Chrome DevTools, check for overlapping
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000] font-normal">Debug using Chrome DevTools, check for
+                overlapping
                 elements, and ensure onClick works properly
                 and ensure onClick works properly</p>
             </div>
             <p class="border border-dashed w-full my-3"></p>
             <ul class="flex justify-between items-center">
               <li>
-                <p class="text-[#00303C]">Deadline</p>
+                <p class="text-[#00303C] font-normal">Deadline</p>
                 <h4 class="font-medium text-base text-[#00303C]">21 March 2025</h4>
               </li>
               <button
@@ -195,7 +218,36 @@
       </section>
 
       <!-- right section container  -->
-      <section class="w-2/5 md:w-1/4 p-6 bg-[#FFFFFF]"></section>
+      <section class="w-2/5 md:w-1/4 p-6 bg-[#FFFFFF]">
+        <div class="text-center">
+          <figure class="flex items-center justify-center space-x-4 mb-4">
+            <img class="w-5 h-5 file:bg-[#00303C] font-bold" src="./assets/activity.png" alt="">
+            <span class="text-xl text-[#00303C] font-medium">Activity Log</span>
+          </figure>
+          <button class="btn hover:bg-[#3752FD] px-4 py-2 bg-[#3752FD] font-medium text-[#FFFFFF]">Clear
+            History</button>
+        </div>
+        <div class="border-b border-dashed border-[#00303C] my-6 w-full"></div>
+
+
+        <!-- comment container -->
+        <div class="comment_container space-y-4">
+
+          <p class="comment_cection bg-[#F4F7FF] p-3 rounded-lg font-normal">
+            You have Complete The Task Add Dark Mode at 12:48:15 PM
+          </p>
+
+          <p class="comment_cection bg-[#F4F7FF] p-3 rounded-lg font-normal">
+            You have Complete The Task Add Dark Mode at 12:48:15 PM
+          </p>
+
+          <p class="comment_cection bg-[#F4F7FF] p-3 rounded-lg font-normal">
+            You have Complete The Task Add Dark Mode at 12:48:15 PM
+          </p>
+
+
+        </div>
+      </section>
 
     </div>
   </main>
