@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBoard</title>
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+
+  <!-- use daisyUi and tailwindcss cdn -->
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+</head>
+
+<body class="bg-[#F4F7FF] pt-6 pb-14">
+  <header class="container mx-auto">
+    <nav class="mx-5 md:mx-12 mb-5">
+
+      <div class="navbar rounded-xl bg-[#FFFFFF]">
+        <div class="flex-1">
+          <img class="w-7 h-7 mr-2" src="./assets/logo.png" alt="">
+          <h3 class="animate-bounce text-2xl">Dev<span class="font-bold">Board</span></h3>
+        </div>
+        <div class="flex-none">
+          <div class="flex items-center justify-center space-x-6">
+            <section class="flex items-center space-x-3 p-2 rounded-full bg-[#F4F7FF]">
+              <img class="w-6 h-6" src="./assets/checkbox.png" alt="">
+              <p class="text-2xl font-bold">23</p>
+            </section>
+            <figure class="p-2 rounded-full bg-[#F4F7FF]"><img class="w-7 h-7 animate-pulse"
+                src="./assets/theme-btn.png" alt=""></figure>
+          </div>
+
+        </div>
+      </div>
+
+    </nav>
+
+  </header>
+  <main class="container mx-auto">
+    <div class="flex mx-5 md:mx-12 space-x-3">
+
+      <!-- left section container  -->
+      <section class="w-3/5 md:w-3/4 p-6 bg-[#FFFFFF]">
+
+        <!-- top section -->
+        <div class="lg:flex space-y-3 lg:space-y-0 lg:space-x-3 mb-6">
+
+          <!-- task Assigned  section-->
+          <section class="lg:w-1/4 bg-[#F4F7FF] flex items-center justify-evenly py-8 rounded-xl">
+            <figure class="p-4 rounded-full bg-[#FFFFFF]"><img src="./assets/checkbox.png" alt=""></figure>
+            <figcaption>
+              <h4 class="font-medium text-[#00303C]">Task Assigned </h4>
+              <p class="font-bold text-3xl text-[#00303C]">05</p>
+            </figcaption>
+          </section>
+
+          <!-- Discover Something section -->
+          <section
+            class="lg:w-2/4 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-center items-center px-8 py-4 space-x-5 rounded-xl cursor-pointer">
+            <img class="w-14 h-14" src="./assets/board.png" alt="">
+            <p class="font-medium text-xl lg:text-2xl text-[#FFFFFF]">Discover Something New Today!</p>
+          </section>
+
+          <!-- date section  -->
+          <section class="lg:w-1/4 bg-[#F4F7FF] flex items-center justify-evenly py-8 rounded-xl">
+            <figure><img src="./assets/calender.png" alt=""></figure>
+            <figcaption>
+              <h4 class="font-normal text-[#00303C]">Wed ,
+                 </h4>
+              <p class="font-bold text-2xl text-[#00303C]">Jul 28 2025</p>
+            </figcaption>
+          </section>
+        </div>
+        <div class="border-b border-dashed w-full"></div>
+
+
+
+        <!-- meddle card div section -->
+        <div class="card- pt-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <section class="card-1 bg-[#F4F7FF] p-5 rounded-xl">
+            <div>
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit">ShopEase</p>
+              <h4 class="font-6 font-medium mt-6 mb-8 text-[#00303C]">Fix Mobile Button Issue</h4>
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000]">Debug using Chrome DevTools, check for overlapping
+                elements, and ensure
+                onClick works properly
+                and ensure onClick works properly</p>
+            </div>
+            <p class="border border-dashed w-full my-3"></p>
+            <ul class="flex justify-between items-center">
+              <li>
+                <p class="text-[#00303C]">Deadline</p>
+                <h4 class="font-medium text-base text-[#00303C]">21 March 2025</h4>
+              </li>
+              <button
+                class="btn hover:bg-[#3752FD] px-3 py-2 bg-[#3752FD] font-medium text-[#FFFFFF]">Completed</button>
+            </ul>
+          </section>
+          <section class="card-2 bg-[#F4F7FF] p-5 rounded-xl">
+            <div>
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit">CloudSync</p>
+              <h4 class="font-6 font-medium mt-6 mb-8 text-[#00303C]">Add Dark Mode</h4>
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000]">Store the user's preference in localStorage, update CSS
+                variables dynamically, and apply a smooth transition effect.</p>
+            </div>
+            <p class="border border-dashed w-full my-3"></p>
+            <ul class="flex justify-between items-center">
+              <li>
+                <p class="text-[#00303C]">Deadline</p>
+                <h4 class="font-medium text-base text-[#00303C]">21 March 2025</h4>
+              </li>
+              <button
+                class="btn hover:bg-[#3752FD] px-3 py-2 bg-[#3752FD] font-medium text-[#FFFFFF]">Completed</button>
+            </ul>
+          </section>
+          <section class="card-3 bg-[#F4F7FF] p-5 rounded-xl">
+            <div>
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit">SwiftPay</p>
+              <h4 class="font-6 font-medium mt-6 mb-8 text-[#00303C]">Optimize Home page </h4>
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000]">Debug using Chrome DevTools, check for overlapping
+                elements, and ensure onClick works properly
+                and ensure onClick works properly</p>
+            </div>
+            <p class="border border-dashed w-full my-3"></p>
+            <ul class="flex justify-between items-center">
+              <li>
+                <p class="text-[#00303C]">Deadline</p>
+                <h4 class="font-medium text-base text-[#00303C]">21 March 2025</h4>
+              </li>
+              <button
+                class="btn hover:bg-[#3752FD] px-3 py-2 bg-[#3752FD] font-medium text-[#FFFFFF]">Completed</button>
+            </ul>
+          </section>
+          <section class="card-4 bg-[#F4F7FF] p-5 rounded-xl">
+            <div>
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit">Meta</p>
+              <h4 class="font-6 font-medium mt-6 mb-8 text-[#00303C]">Add new emoji 🤲</h4>
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000]">Debug using Chrome DevTools, check for overlapping
+                elements, and ensure onClick works properly
+                and ensure onClick works properly</p>
+            </div>
+            <p class="border border-dashed w-full my-3"></p>
+            <ul class="flex justify-between items-center">
+              <li>
+                <p class="text-[#00303C]">Deadline</p>
+                <h4 class="font-medium text-base text-[#00303C]">21 March 2025</h4>
+              </li>
+              <button
+                class="btn hover:bg-[#3752FD] px-3 py-2 bg-[#3752FD] font-medium text-[#FFFFFF]">Completed</button>
+            </ul>
+          </section>
+          <section class="card-5 bg-[#F4F7FF] p-5 rounded-xl">
+            <div>
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit">Google LLC</p>
+              <h4 class="font-6 font-medium mt-6 mb-8 text-[#00303C]">Integrate OpenAI API</h4>
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000]">Debug using Chrome DevTools, check for overlapping
+                elements, and ensure onClick works properly
+                and ensure onClick works properly</p>
+            </div>
+            <p class="border border-dashed w-full my-3"></p>
+            <ul class="flex justify-between items-center">
+              <li>
+                <p class="text-[#00303C]">Deadline</p>
+                <h4 class="font-medium text-base text-[#00303C]">21 March 2025</h4>
+              </li>
+              <button
+                class="btn hover:bg-[#3752FD] px-3 py-2 bg-[#3752FD] font-medium text-[#FFFFFF]">Completed</button>
+            </ul>
+          </section>
+          <section class="card-6 bg-[#F4F7FF] p-5 rounded-xl">
+            <div>
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit">Glassdoar</p>
+              <h4 class="font-6 font-medium mt-6 mb-8 text-[#00303C]">Improve Job searching</h4>
+              <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000]">Debug using Chrome DevTools, check for overlapping
+                elements, and ensure onClick works properly
+                and ensure onClick works properly</p>
+            </div>
+            <p class="border border-dashed w-full my-3"></p>
+            <ul class="flex justify-between items-center">
+              <li>
+                <p class="text-[#00303C]">Deadline</p>
+                <h4 class="font-medium text-base text-[#00303C]">21 March 2025</h4>
+              </li>
+              <button
+                class="btn hover:bg-[#3752FD] px-3 py-2 bg-[#3752FD] font-medium text-[#FFFFFF]">Completed</button>
+            </ul>
+          </section>
+        </div>
+
+      </section>
+
+      <!-- right section container  -->
+      <section class="w-2/5 md:w-1/4 p-6 bg-[#FFFFFF]"></section>
+
+    </div>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
