@@ -33,3 +33,13 @@ function clearHistoryBox(id) {
   let historyBox = document.getElementById('history_box');
   historyBox.innerHTML = '';
 }
+
+function toggleDesktoFAQ() {
+  // alert('toooggle');
+
+  window.location.href = './index_2.html';
+}
+
+function toggleFAQtoDesk() {
+  window.location.href = './index.html';
+}
