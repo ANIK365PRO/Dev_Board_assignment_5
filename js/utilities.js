@@ -7,3 +7,20 @@ function getInnerTextById(id) {
   const convertedValue = parseInt(value);
   return convertedValue;
 }
+
+//** update history box **//
+function historyBoxContainer(id) {
+  const historyBox = document.getElementById('history_box');
+
+  //** update current date **//
+  let now = new Date();
+  const currentTime = now.toLocaleTimeString();
+  console.log(currentTime);
+  console.log(now);
+
+  const p = document.createElement('p');
+
+  p.classList.add('bg-[#F4F7FF]', 'font-normal', 'p-3', 'rounded-lg');
+  p.innerText = ` You have Complete The Task Add Dark Mode at ${currentTime}.`;
+  historyBox.appendChild(p);
+}

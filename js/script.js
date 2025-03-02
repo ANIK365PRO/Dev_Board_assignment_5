@@ -19,6 +19,9 @@ for (let i = 0; i < completedBtns.length; i++) {
       setInnerTextByIdWithValue('total_compleat_task', totalCompleatTask + 1);
     }
 
+    //** call history box */
+    historyBoxContainer('history_box');
+
     //** set Completed_btn disabled **//
     completedBtn.disabled = true;
   });
