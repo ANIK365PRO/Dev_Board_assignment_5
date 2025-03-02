@@ -22,3 +22,16 @@ function historyBoxContainer(id) {
   p.innerText = ` You have Complete The Task Add Dark Mode at ${currentTime}.`;
   historyBox.appendChild(p);
 }
+function getDate(id) {
+  let newDay = new Date();
+  let dayName = newDay.toLocaleString('en-US', { weekday: 'long' });
+  let day = newDay.getDate();
+  let monthName = newDay.toLocaleString('en-US', { month: 'long' });
+  let year = newDay.getFullYear();
+
+  let dayMonthYear = `${monthName} ${day} ${year}`;
+
+  document.getElementById('updateDay').innerText = dayName + ',';
+  document.getElementById(id).innerText = dayMonthYear;
+}
+getDate('dateUpdate');
