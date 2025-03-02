@@ -50,8 +50,8 @@
               <img class="w-6 h-6 cursor-pointer" src="./assets/checkbox.png" alt="">
               <p id="total_compleat_task" class="text-xl font-bold">24</p>
             </section>
-            <figure class="p-2 rounded-full bg-[#F4F7FF] cursor-pointer"><img class="w-7 h-7 animate-pulse"
-                src="./assets/theme-btn.png" alt=""></figure>
+            <figure class="p-2 rounded-full bg-[#F4F7FF] cursor-pointer"><img onclick="randomColor()"
+                class="w-7 h-7 animate-pulse" src="./assets/theme-btn.png" alt=""></figure>
           </div>
 
         </div>
@@ -103,11 +103,11 @@
 
 
         <!-- meddle card div section -->
-        <div class="card- pt-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="pt-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
           <section class="card-1 bg-[#F4F7FF] p-5 rounded-xl">
             <div>
               <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit font-normal">ShopEase</p>
-              <h4 class="font-6 font-medium mt-6 mb-8 text-[#00303C]">Fix Mobile Button Issue</h4>
+              <h4 class="card_title font-6 font-medium mt-6 mb-8 text-[#00303C]">Fix Mobile Button Issue</h4>
               <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000] font-normal">Debug using Chrome DevTools, check for
                 overlapping
                 elements, and ensure
@@ -127,7 +127,7 @@
           <section class="card-2 bg-[#F4F7FF] p-5 rounded-xl">
             <div>
               <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit font-normal">CloudSync</p>
-              <h4 class="font-6 font-medium mt-6 mb-8 text-[#00303C]">Add Dark Mode</h4>
+              <h4 class="card_title font-6 font-medium mt-6 mb-8 text-[#00303C]">Add Dark Mode</h4>
               <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000] font-normal">Store the user's preference in localStorage,
                 update CSS
                 variables dynamically, and apply a smooth transition effect.</p>
@@ -145,7 +145,7 @@
           <section class="card-3 bg-[#F4F7FF] p-5 rounded-xl">
             <div>
               <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit font-normal">SwiftPay</p>
-              <h4 class="font-6 font-medium mt-6 mb-8 text-[#00303C]">Optimize Home page </h4>
+              <h4 class="card_title font-6 font-medium mt-6 mb-8 text-[#00303C]">Optimize Home page </h4>
               <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000] font-normal">Debug using Chrome DevTools, check for
                 overlapping
                 elements, and ensure onClick works properly
@@ -164,7 +164,7 @@
           <section class="card-4 bg-[#F4F7FF] p-5 rounded-xl">
             <div>
               <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit font-normal">Meta</p>
-              <h4 class="font-6 font-medium mt-6 mb-8 text-[#00303C]">Add new emoji <span
+              <h4 class="card_title font-6 font-medium mt-6 mb-8 text-[#00303C]">Add new emoji <span
                   class="animate-pulse">🤲</span></h4>
               <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000] font-normal">Debug using Chrome DevTools, check for
                 overlapping
@@ -184,7 +184,7 @@
           <section class="card-5 bg-[#F4F7FF] p-5 rounded-xl">
             <div>
               <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit font-normal">Google LLC</p>
-              <h4 class="font-6 font-medium mt-6 mb-8 text-[#00303C]">Integrate OpenAI API</h4>
+              <h4 class="card_title font-6 font-medium mt-6 mb-8 text-[#00303C]">Integrate OpenAI API</h4>
               <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000] font-normal">Debug using Chrome DevTools, check for
                 overlapping
                 elements, and ensure onClick works properly
@@ -203,7 +203,7 @@
           <section class="card-6 bg-[#F4F7FF] p-5 rounded-xl">
             <div>
               <p class="px-4 py-2 bg-[#FFFFFF] text-[#00303C] max-w-fit font-normal">Glassdoar</p>
-              <h4 class="font-6 font-medium mt-6 mb-8 text-[#00303C]">Improve Job searching</h4>
+              <h4 class="card_title font-6 font-medium mt-6 mb-8 text-[#00303C]">Improve Job searching</h4>
               <p class="px-4 py-2 bg-[#FFFFFF] text-[#000000] font-normal">Debug using Chrome DevTools, check for
                 overlapping
                 elements, and ensure onClick works properly
@@ -250,6 +250,17 @@
 
     </div>
   </main>
+
+  <script>
+    function getRandomColor() {
+      const color = "#" + Math.floor(Math.random() * 16777215).toString(16);
+      return color
+    }
+
+    function randomColor() {
+      document.body.style.backgroundColor = getRandomColor();
+    }
+  </script>
 
   <script src="./js/utilities.js"></script>
   <script src="./js/script.js"></script>

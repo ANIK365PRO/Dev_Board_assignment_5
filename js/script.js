@@ -33,6 +33,11 @@ for (let i = 0; i < completedBtns.length; i++) {
     if (taskAssignedText === 0) {
       alert('congrats!!! you have completed all the current task.');
     }
+
+    // const titles = document.getElementsByClassName('card_title');
+    // for (title of titles) {
+    //   console.log(title.innerText);
+    // }
   });
 }
 

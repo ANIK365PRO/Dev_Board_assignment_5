@@ -19,6 +19,7 @@ function historyBoxContainer(id) {
   const p = document.createElement('p');
 
   p.classList.add('bg-[#F4F7FF]', 'font-normal', 'p-3', 'rounded-lg');
+
   p.innerText = ` You have Complete The Task Add Dark Mode at ${currentTime}.`;
   historyBox.appendChild(p);
 }
@@ -31,7 +32,7 @@ function getDate(id) {
 
   let dayMonthYear = `${monthName} ${day} ${year}`;
 
-  document.getElementById('updateDay').innerText = dayName + ',';
+  document.getElementById('updateDay').innerText = dayName + ', ';
   document.getElementById(id).innerText = dayMonthYear;
 }
 getDate('dateUpdate');

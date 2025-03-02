@@ -64,45 +64,56 @@
         <div class="FAQ_section_101 bg-[#FFFFFF] p-3 rounded-lg">
           <h3 class="text-lg font-bold border-b border-dashed pb-4">Question-1: What are the different ways to select an
             element in the DOM?</h3>
-          <p class="pt-4 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-            est dicta
-            minima
-            ad! Vel quis quo
-            placeat atque
-            pariatur dignissimos natus ipsum sequi voluptas libero recusandae, corrupti neque. Non, est.</p>
+          <p class="pt-4 font-light">Many approach to select na element in the DOM: Using getElementById,
+            Using getElementsByClassName,
+            Using getElementsByTagName,
+            Using querySelector,
+            Using querySelectorAll</p>
         </div>
         <div class="FAQ_section_102 bg-[#FFFFFF] p-3 rounded-lg">
           <h3 class="text-lg font-bold border-b border-dashed pb-4">Question-2: What is the difference between
             innerHTML, innerText, and textContent ?</h3>
-          <p class="pt-4 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex est dicta minima ad!
-            Vel quis quo
-            placeat atque
-            pariatur dignissimos natus ipsum sequi voluptas libero recusandae, corrupti neque. Non, est.</p>
+          <p class="pt-4 font-light">
+
+            <span>
+              innerHTML: when you use it to set the content of elements, you can include HTML tags, and the browser will
+              render them
+              correctly.
+            </span><br>
+            <span>
+              innerText: you use innerText to read the content of an element, it returns the text
+              as it appears on screen. It ignores HTML tags. And it also does not include text that is hidden with CSS
+              styles.
+            </span> <br>
+            <span>
+              textContent: The textContent property also ignores all HTML tags and returns only the text.
+            </span>
+
+          </p>
         </div>
         <div class="FAQ_section_103 bg-[#FFFFFF] p-3 rounded-lg">
           <h3 class="text-lg font-bold border-b border-dashed pb-4">Question-3: What is event delegation in the DOM?
           </h3>
-          <p class="pt-4 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex est dicta minima ad!
-            Vel quis quo
-            placeat atque
-            pariatur dignissimos natus ipsum sequi voluptas libero recusandae, corrupti neque. Non, est.</p>
+          <p class="pt-4 font-light">Event Delegation is a pattern based upon the concept of Event Bubbling. It is an
+            event-handling pattern that allows you
+            to handle events at a higher level in the DOM tree other than the level where the event was first received.
+          </p>
         </div>
         <div class="FAQ_section_104 bg-[#FFFFFF] p-3 rounded-lg">
           <h3 class="text-lg font-bold border-b border-dashed pb-4">Question-4: What is event bubbling in the DOM?
           </h3>
-          <p class="pt-4 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex est dicta minima ad!
-            Vel quis quo
-            placeat atque
-            pariatur dignissimos natus ipsum sequi voluptas libero recusandae, corrupti neque. Non, est.</p>
+          <p class="pt-4 font-light">After reaching the target element (child), the event enters the bubbling phase,
+            propagating back up through the DOM tree
+            to the parent (parent).</p>
         </div>
         <div class="FAQ_section_105 bg-[#FFFFFF] p-3 rounded-lg">
           <h3 class="text-lg font-bold border-b border-dashed pb-4">Question-5: How do you create, add, and remove
             elements using JavaScript?
           </h3>
-          <p class="pt-4 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex est dicta minima ad!
-            Vel quis quo
-            placeat atque
-            pariatur dignissimos natus ipsum sequi voluptas libero recusandae, corrupti neque. Non, est.</p>
+          <p class="pt-4 font-light"><span>create elements: let p = document.createElement("p");</span><br>
+            <span>add elements: add = p.classList.add("new-class");</span><br>
+            <span>remove elements : remove = add.classList.remove("new_class")</span>
+          </p>
         </div>
       </article>
     </section>
