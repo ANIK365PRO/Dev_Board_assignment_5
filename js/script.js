@@ -26,3 +26,10 @@ for (let i = 0; i < completedBtns.length; i++) {
     completedBtn.disabled = true;
   });
 }
+
+// ** for clear history box *//
+
+function clearHistoryBox(id) {
+  let historyBox = document.getElementById('history_box');
+  historyBox.innerHTML = '';
+}

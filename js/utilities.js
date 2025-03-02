@@ -15,8 +15,6 @@ function historyBoxContainer(id) {
   //** update current date **//
   let now = new Date();
   const currentTime = now.toLocaleTimeString();
-  console.log(currentTime);
-  console.log(now);
 
   const p = document.createElement('p');
 
