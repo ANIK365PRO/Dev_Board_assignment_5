@@ -24,6 +24,15 @@ for (let i = 0; i < completedBtns.length; i++) {
 
     //** set Completed_btn disabled **//
     completedBtn.disabled = true;
+
+    //** alert when check if all task completed **//
+    const taskAssignedText = parseInt(
+      document.getElementById('task_assigned').innerText
+    );
+
+    if (taskAssignedText === 0) {
+      alert('congrats!!! you have completed all the current task.');
+    }
   });
 }
 
