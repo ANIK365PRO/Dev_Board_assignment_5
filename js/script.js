@@ -33,11 +33,6 @@ for (let i = 0; i < completedBtns.length; i++) {
     if (taskAssignedText === 0) {
       alert('congrats!!! you have completed all the current task.');
     }
-
-    // const titles = document.getElementsByClassName('card_title');
-    // for (title of titles) {
-    //   console.log(title.innerText);
-    // }
   });
 }
 
@@ -56,4 +51,13 @@ function toggleDesktoFAQ() {
 
 function toggleFAQtoDesk() {
   window.location.href = './index.html';
+}
+
+function getRandomColor() {
+  const color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  return color;
+}
+
+function randomColor() {
+  document.body.style.backgroundColor = getRandomColor();
 }
